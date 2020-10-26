@@ -10,6 +10,7 @@
     <body>
         <header>
             <div id="header-sales" class="d-flex">
+                <!-- An array of options for sales would be better -->
                 <div class="header-sale">
                     <embed class="icon mr-2" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\plane.svg" /> Frete grátis a partir de R$ 169,90
                 </div>
@@ -37,6 +38,7 @@
                     </div>
                     <div class="header-sub-actions-item header-sub-actions-icon">
                         <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\bag.svg" />
+                        <!-- Control with js -->
                         <embed id="quantity-bag" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\quantity_bag.svg" />
                     </div>
                 </div>
@@ -52,6 +54,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Need a menu when clicked -->
                 <nav id="header-nav-nav" class="align-self-center">
                     <ul id="header-nav-nav-ul">
                         <li>
@@ -82,12 +85,166 @@
             </div>
         </header>
         <section id="main-image">
-            <img src="..\..\..\..\public_html\front_end_test_public\images\background.png">
-
-            </img>
+            <div id="main-image-title">
+                <p>
+                    <h6>NOVA</h6>
+                </p>
+                <p>
+                    <h6>COLEÇÂO</h6>
+                </p>
+                <p>
+                    <h1>DC Comics + Logoipsum</h1>
+                </p>
+            </div>
+            <div id="main-image-buttons">
+                <button type="button" class="btn btn-light mr-4">PARA CACHORROS</button>
+                <button type="button" class="btn btn-outline-light">PARA GATOS</button>
+            </div>
+        </section>
+        <section id="mosaic-image" class="d-flex">
+            <div id="mosaic-image-main" class="mosaic-item">
+                <div id="mosaic-image-main-image"></div>
+                <div id="mosaic-image-main-title" class="mosaic-title">
+                    <p>
+                        PEITORAIS
+                    </p>
+                </div>
+            </div>
+            <div id="mosaic-image-secondary">
+                <div id="mosaic-image-secondary-top" class="mosaic-item d-flex">
+                    <div id="mosaic-image-secondary-top-image"></div>
+                    <div id="mosaic-image-secondary-top-title" class="mosaic-title">
+                        <p>
+                            ROUPINHAS
+                        </p>
+                    </div>
+                </div>
+                <div id="mosaic-image-secondary-bottom" class="d-flex">
+                    <div id="mosaic-image-double-left" class="mosaic-item mosaic-image-double">
+                        <div id="mosaic-image-double-left-image"></div>
+                        <div id="mosaic-image-double-left-title" class="mosaic-title">
+                            <p>
+                                COLEIRAS
+                            </p>
+                        </div>
+                    </div>
+                    <div id="mosaic-image-double-right" class="mosaic-item mosaic-image-double">
+                        <div id="mosaic-image-double-right-image"></div>
+                        <div id="mosaic-image-double-right-title" class="mosaic-title">
+                            <p>
+                                GUIAS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="carousel-image">
+            <!-- Need a carousel -->
+            <div id="carousel-item-1" class="carousel-image-item">
+                <div id="carousel-image-1" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\dog.svg" />
+                </div>
+                <p class="carousel-image-item-text">Bandana para cachorros e gatos</p>
+                <p class="carousel-image-item-price">R$ 33,90</p>
+            </div>
+            <div id="carousel-item-2" class="carousel-image-item">
+                <div id="carousel-image-2" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\cat.svg" />
+                </div>
+                <p class="carousel-image-item-text">Bandana para cachorros e gatos
+Energy</p>
+                <p class="carousel-image-item-price">R$ 33,90</p>
+            </div>
+            <div id="carousel-item-3" class="carousel-image-item">
+                <div id="carousel-image-3" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\dog.svg" />
+                    <div class="carousel-discount">-15%</div>
+                </div>
+                <p class="carousel-image-item-text">Coleira coleção Scooby-Doo</p>
+                <br>
+                <p class="carousel-image-item-price">R$ 120,0</p>
+            </div>
+            <div id="carousel-item-4" class="carousel-image-item">
+                <div id="carousel-image-4" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\dog.svg" />
+                </div>
+                <p class="carousel-image-item-text">Kit Flamengo para cachorro
+e gato</p>
+                <p class="carousel-image-item-price">R$ 145,90</p>
+            </div>
+            <div id="carousel-item-5" class="carousel-image-item">
+                <div id="carousel-image-5" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\dog.svg" />
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\cat.svg" />
+                    <div class="carousel-discount">-15%</div>
+                </div>
+                <p class="carousel-image-item-text">Gravata para cachorros estampa
+floral</p>
+                <p class="carousel-image-item-price">R$ 22,00</p>
+            </div>
+            <div id="carousel-item-6" class="carousel-image-item">
+                <div id="carousel-image-6" class="carousel-image-item-image">
+                    <embed class="icon" type="image/svg+xml" src="..\..\..\..\public_html\front_end_test_public\svg\dog.svg" />
+                </div>
+                <p class="carousel-image-item-text">Peitoral H Black</p>
+                <br>
+                <p class="carousel-image-item-price">R$ 33,90</p>
+            </div>
+        </section>
+        <section id="colection-1" class="d-flex">
+            <div id="colection-1-right">
+                <div id="colection-1-right-title">
+                    <p>
+                        <h6>COLEÇÃO</h6>
+                    </p>
+                    <p>
+                        <h1>Scooby-Doo</h1>
+                    </p>
+                </div>
+                <div id="colection-1-right-buttons">
+                    <button type="button" class="btn btn-light mr-4">PARA CACHORROS</button>
+                    <button type="button" class="btn btn-outline-light">PARA GATOS</button>
+                </div>
+            </div>
+            <div id="colection-1-block"></div>
+        </section>
+        <section id="colection-2" class="d-flex">
+            <div id="colection-2-right">
+                <div id="colection-2-right-title">
+                    <p>
+                        <h6>COLEÇÃO</h6>
+                    </p>
+                    <p>
+                        <h1>DC Comics</h1>
+                    </p>
+                </div>
+                <div id="colection-2-right-buttons">
+                    <button type="button" class="btn btn-light mr-4">PARA CACHORROS</button>
+                    <button type="button" class="btn btn-outline-light">PARA GATOS</button>
+                </div>
+            </div>
+            <div id="colection-2-block"></div>
+        </section>
+        <section id="choice-image" class="d-flex">
+            <div id="choice-image-left">
+                <img src="../../../../public_html/front_end_test_public/images/cachorro.png" alt="cachorro" />
+                <div id="choice-text-left" class="choice-text">
+                    <p>
+                        Cachorros
+                    </p>
+                    <button type="button" class="btn btn-light">VER TUDO</button>
+                </div>
+            </div>
+            <div id="choice-image-right">
+                <img src="../../../../public_html/front_end_test_public/images/gato.png" alt="gato" />
+                <div id="choice-text-right" class="choice-text">
+                    <p>
+                        Gatos
+                    </p>
+                    <button type="button" class="btn btn-light">VER TUDO</button>
+                </div>
+            </div>
         </section>
     </body>
 </html>
-<script>
-
-</script>

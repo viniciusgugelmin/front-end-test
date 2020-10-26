@@ -1,4 +1,5 @@
 /* Logoipsum main style */
+/* Need a new style for variables */
 
 /* APP */
 body {
@@ -6,6 +7,7 @@ body {
     font-size: clamp(14px, 1vw + 10%, 19px);
     font-family: 'Heebo', sans-serif !important;
     color: #43444A;
+    overflow-x: hidden;
 }
 
 strong {
@@ -185,7 +187,456 @@ strong {
     text-decoration: underline;
 }
 
-/* ICON */
+/* SECTION */
+
+/* Main image */
+#main-image{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public_html/front_end_test_public/images/background.png');
+    min-height: 664px;
+}
+
+#main-image-title {
+    color: #FFFFFF;
+    padding-top: 225px;
+    padding-left: 18%;
+    margin-bottom: 3.5rem;
+}
+
+#main-image-title p {
+    margin: 0 !important;
+}
+
+#main-image-title h6 {
+    margin-bottom: 0 !important;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+#main-image-title h1 {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+}
+
+#main-image-buttons {
+    padding-left: 18%;
+}
+
+/* Mosaic image */
+#mosaic-image {
+    padding: 3rem;
+    width: 100%;
+}
+
+.mosaic-item {
+    cursor: pointer;
+    transition: opacity 0.5s ease-out, transform 0.2s ease-out;
+}
+
+.mosaic-item:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.mosaic-title {
+    background: #F8F8F8;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.15em;
+}
+
+#mosaic-image-main, #mosaic-image-secondary {
+    flex: 1;
+    height: 680px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+    #mosaic-image-main, #mosaic-image-secondary {
+        height: 580px;
+    }
+}
+
+#mosaic-image-main {
+    margin-right: 25px;
+}
+
+#mosaic-image-secondary {
+    margin-left: 25px;
+}
+
+#mosaic-image-main-image {
+    height: 600px;
+    background: #F8F8F8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public_html/front_end_test_public/images/peitoral-antipux.png');
+}
+
+@media only screen and (max-width: 1440px) {
+    #mosaic-image-main-image {
+        background-size: 80%;
+        height: 500px;
+    }
+}
+
+#mosaic-image-main-title {
+    height: 80px;
+    text-align: center;
+}
+
+#mosaic-image-secondary-top {
+    height: 325px;
+    margin-bottom: 25px;
+}
+
+#mosaic-image-secondary-top-image, #mosaic-image-secondary-top-title {
+    background: #F8F8F8;
+}
+
+#mosaic-image-secondary-top-image {
+    flex-grow: 4;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public_html/front_end_test_public/images/roupinha.png');
+}
+
+@media only screen and (max-width: 1270px) {
+    #mosaic-image-secondary-top-image {
+        background-size: 80%;
+    }
+}
+
+#mosaic-image-secondary-top-title {
+    flex-grow: 3;
+}
+
+#mosaic-image-secondary-top-title p {
+    display: inline-block;
+    position: relative;
+    top: 162.5px;
+    left: 20%;
+}
+
+#mosaic-image-secondary-bottom {
+    height: 305px;
+}
+
+.mosaic-image-double {
+    margin-top: 25px;
+    flex-grow: 1;
+}
+
+#mosaic-image-double-left {
+    margin-right: 25px;
+}
+
+#mosaic-image-double-left-image, #mosaic-image-double-right-image {
+    height: 255px;
+    background: #F8F8F8;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mosaic-image-double-left-image {
+    background-image: url('../../../../public_html/front_end_test_public/images/coleira-para-cachorros.png');
+}
+
+@media only screen and (max-width: 1440px) {
+    #mosaic-image-double-left-image {
+        background-size: 80%;
+        height: 155px;
+    }
+}
+
+#mosaic-image-double-left-title p, #mosaic-image-double-right-title p {
+    text-align: center;
+    padding-bottom: 33px;
+    margin: 0;
+}
+
+#mosaic-image-double-right {
+    margin-left: 25px;
+}
+
+#mosaic-image-double-right-image {
+    background-image: url('../../../../public_html/front_end_test_public/images/guia-para-cachorros.png');
+}
+
+@media only screen and (max-width: 1440px) {
+    #mosaic-image-double-right-image {
+        background-size: 80%;
+        height: 155px;
+    }
+}
+
+/* Choice image */
+#choice-image {
+    height: 508px;
+}
+
+#choice-image p {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5rem;
+}
+
+.choice-text {
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+}
+
+#choice-text-left {
+    right: 20%;
+}
+
+#choice-text-right {
+    left: 20%;
+}
+
+#choice-image-left, #choice-image-right {
+    position: relative;
+    flex-grow: 1;
+    background: #F5F5F5;
+}
+
+#choice-image-left {
+    margin-right: 25px;
+}
+
+#choice-image-left img {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    transition: opacity 0.25s ease-in;
+}
+
+@media only screen and (max-width: 1546px) {
+    #choice-image-left img {
+        opacity: 0.25;
+    }
+}
+
+#choice-image-right {
+    margin-left: 25px;
+}
+
+#choice-image-right img {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    transition: opacity 0.25s ease-in;
+}
+
+@media only screen and (max-width: 1546px) {
+    #choice-image-right img {
+        opacity: 0.25;
+    }
+}
+
+/* Carousel image */
+#carousel-image {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.carousel-image-item {
+    display: inline-block;
+    margin: 0 25px;
+    height: 550px;
+    width: 288px;
+}
+
+.carousel-image-item-image {
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    cursor: pointer;
+    transition: opacity 0.5s ease-out, transform 0.2s ease-out;
+}
+.carousel-image-item-image:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.carousel-image-item-image .icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#carousel-image-6 {
+    background-image: url('../../../../public_html/front_end_test_public/images/peitoral-h.png');
+}
+
+#carousel-image-5 {
+    background-image: url('../../../../public_html/front_end_test_public/images/laco.png');
+}
+
+#carousel-image-4 {
+    background-image: url('../../../../public_html/front_end_test_public/images/kit.png');
+}
+
+#carousel-image-3 {
+    background-image: url('../../../../public_html/front_end_test_public/images/coleira-sd.png');
+}
+
+#carousel-image-2 {
+    background-image: url('../../../../public_html/front_end_test_public/images/bandana.png');
+}
+
+#carousel-image-1 {
+    background-image: url('../../../../public_html/front_end_test_public/images/manequim-dog.png');
+}
+
+.carousel-discount {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #141518;
+    width: 68px;
+    height: 43px;
+    padding-top: 10px;
+    border-radius: 3px;
+}
+
+.carousel-image-item-text {
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.carousel-image-item-price {
+    text-align: left;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+/* stupid things */
+@media only screen and (max-width: 2047px) {
+    #carousel-item-6 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1705px) {
+    #carousel-item-5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1363px) {
+    #carousel-item-4 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    #carousel-item-3 {
+        display: none;
+    }
+}
+/* stupid things */
+
+.carousel-image-item-image {
+    background: #F5F5F5;
+    width: 288px;
+    height: 305px;
+    border-radius: 3px;
+}
+
+.carousel-image-item-text {
+    font-weight: 400;
+    line-height: 23px;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+}
+
+/* Coletion 1 */
+#colection-1 {
+    height: 635px;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+#colection-1-right {
+    padding-top: 200px;
+    padding-left: 18%;
+    color: white;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public_html/front_end_test_public/images/fundo.png');
+}
+
+#colection-1-right-title {
+    margin-bottom: 3.5rem;
+}
+
+#colection-1-right h6 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+}
+
+#colection-1-block {
+    flex-grow: 1;
+}
+
+/* Colection 2 */
+#colection-2 {
+    height: 635px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#colection-2-right {
+    padding-top: 200px;
+    padding-left: 18%;
+    color: white;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-image: url('../../../../public_html/front_end_test_public/images/fundo2.png');
+}
+
+#colection-2-right-title {
+    margin-bottom: 3.5rem;
+}
+
+#colection-2-right h6 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+}
+
+#colection-2-block {
+    flex-grow: 1;
+}
+
+/* OTHERS */
+
+/* Icon */
 .icon {
     vertical-align: middle;
 }
@@ -195,8 +646,36 @@ strong {
     transform: translate(-12px, 7px);
 }
 
-/* UTILITY */
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #43444A;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Utility */
 ul {
     list-style: none;
+}
+
+.btn {
+    letter-spacing: 0.15em !important;
+    padding: 15px 25px !important;
+    transition: all 0.25s ease-out !important;
+    color: #242529;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 17px;
+    text-transform: uppercase;
 }
